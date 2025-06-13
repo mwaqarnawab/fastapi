@@ -4,9 +4,8 @@ from pydantic import BaseModel
 app = FastAPI()
 
 class Input(BaseModel):
-    a: int
-    b: int
+    issueKey: str
 
-@app.post("/add")
-def add_numbers(input: Input):
-    return {"result": input.a + input.b}
+@app.post("/createIssue")
+def add_numbers(issueKey: str):
+    return {"result = ": issueKey}
