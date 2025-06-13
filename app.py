@@ -8,4 +8,4 @@ class Input(BaseModel):
 
 @app.post("/createIssue")
 def add_numbers(issueKey: str):
-    return {"result = ": issueKey}
+    return {"result = "+ issueKey}
