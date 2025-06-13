@@ -6,6 +6,6 @@ app = FastAPI()
 class Input(BaseModel):
     issueKey: int
 
-@app.post("/createIssue{issueKey}")
+@app.post("/createIssue/{issueKey}")
 def add_numbers(issueKey: int):
     return {"result = ": issueKey}
