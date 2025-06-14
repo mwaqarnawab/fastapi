@@ -1,12 +1,18 @@
-#from fastapi import FastAPI
-#from pydantic import BaseModel
+# app.py
+import sys
+import json
 
-#app = FastAPI()
+def main():
+    payload_file = sys.argv[1]
+    with open(payload_file, 'r') as f:
+        payload = json.load(f)
 
-#class Input(BaseModel):
-#    issueKey: int
+    # Access parameters
+    param1 = payload.get("param1", "default1")
+    param2 = payload.get("param2", "default2")
 
-#@app.post("/createIssue/{issueKey}")
-#def add_numbers(issueKey: int):
-#    return {"result = ": issueKey}
-print(f'HEllo world')
+    print(f"Received param1: {param1}")
+    print(f"Received param2: {param2}")
+
+if __name__ == "__main__":
+    main()
