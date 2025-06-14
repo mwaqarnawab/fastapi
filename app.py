@@ -13,6 +13,7 @@ def main():
 
     print(f"Received param1: {param1}")
     print(f"Received param2: {param2}")
+    return "THANKS"
 
 if __name__ == "__main__":
     main()
