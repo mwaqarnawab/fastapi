@@ -1,11 +1,12 @@
-from fastapi import FastAPI
-from pydantic import BaseModel
+#from fastapi import FastAPI
+#from pydantic import BaseModel
 
-app = FastAPI()
+#app = FastAPI()
 
-class Input(BaseModel):
-    issueKey: int
+#class Input(BaseModel):
+#    issueKey: int
 
-@app.post("/createIssue/{issueKey}")
-def add_numbers(issueKey: int):
-    return {"result = ": issueKey}
+#@app.post("/createIssue/{issueKey}")
+#def add_numbers(issueKey: int):
+#    return {"result = ": issueKey}
+print(f'HEllo world')
