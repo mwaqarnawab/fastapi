@@ -1,4 +1,4 @@
-name: Run app.py via Webhook
+name: Run New APP 2026 via Webhook
 
 on:
   repository_dispatch:
